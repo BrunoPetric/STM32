@@ -1,4 +1,4 @@
-23:56:57 **** Incremental Build of configuration Debug for project zadatak ****
+00:10:18 **** Incremental Build of configuration Debug for project zadatak ****
 make -j4 all 
 arm-none-eabi-size   zadatak.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   zadatak.elf
 Finished building: default.size.stdout
  
 
-23:56:57 Build Finished. 0 errors, 0 warnings. (took 443ms)
+00:10:19 Build Finished. 0 errors, 0 warnings. (took 434ms)
 

@@ -643,7 +643,7 @@ HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
  8000516:	0018      	movs	r0, r3
  8000518:	f001 fe52 	bl	80021c0 <HAL_RTC_GetTime>
 
-sprintf(time, "Time: %02d.%02d.%02d\n",sTime.Hours,sTime.Minutes,sTime.Seconds);
+sprintf(time, "Time: %02d:%02d:%02d\n",sTime.Hours,sTime.Minutes,sTime.Seconds);
  800051c:	4b2d      	ldr	r3, [pc, #180]	; (80005d4 <main+0xf4>)
  800051e:	781b      	ldrb	r3, [r3, #0]
  8000520:	001a      	movs	r2, r3
