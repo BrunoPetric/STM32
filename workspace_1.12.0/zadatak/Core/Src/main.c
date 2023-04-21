@@ -28,10 +28,9 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 char time[30];
-char date[30];
 uint8_t uartrx[9] = "";
 uint8_t buff[100] = "";
-int i, h = -1, m = -1;
+int h = -1, m = -1;
 int previous_minutes;
 uint8_t hours[2]={0};
 uint8_t minutes[2]={0};
@@ -101,10 +100,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  previous_minutes = sTime.Minutes;
   setup_time();
   /* USER CODE BEGIN 2 */
-
+  previous_minutes = sTime.Minutes;
   /* USER CODE END 2 */
 
   /* Infinite loop */
